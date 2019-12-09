@@ -26,9 +26,9 @@ What is "HTML"
 
 <p style="background-color:grey;"> paragraph command </p>
 
-<a href="https://www.google.com"> links are defined this tag </a>
+<a href="https://www.google.com" title="go to google web sites"> links are defined this tag </a>
 
-<img src="html.png" alt="google.com" width="150" height="200"> <!-- images are defined with this tag. src(source file, file name), alt(alternative text) -->
+<img src="html.png" alt="google.com" width="150" height="200" style="float: left;"> <!-- images are defined with this tag. src(source file, file name), alt(alternative text)-->
 
 <button> click button </button> <!-- buttons are defined with this tag-->
 
@@ -54,6 +54,38 @@ What is "HTML"
 
 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> <!-- marking abbreviations can give useful information to browsers, translation systems and search engines-->
 
+<p style="background-color: rgba(255,0,0,0.2);"> blaa blaa </p> <!-- rgba(red,green, blue, alpha) the alpha parameter is a number between 0.0 and 1.0. (0.0 -> fully transparent , 1.0 -> not transparent at all)-->
+
+<a href="introduction.html">
+    <img src="html.png" alt="HTML" style="width:50px; height:50px; border:0;">
+</a>
+
+<h3 id="#c1"> chapter 1</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c2"> chapter 2</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c3"> chapter 3</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c4"> chapter 4</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c5"> chapter 5</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c6"> chapter 6</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c7"> chapter 7</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<h3 id="#c8"> chapter 8</h3>
+<p> blaaaa blllaaaaaa blaaaaaaaa </p>
+<a href="#c2"> jump to chapter 2 </a> <!-- add a link to te bookmark( jump to chapter 3), from within the same page -->
+<a href="#c8"> jump to chapter 8 </a> 
+<img src="officetable.jpg" alt="workplace" width="500px" height="500px" usemap="#workmap">
+<map name="workmap">
+    <area shape="rect" coords="330,120,579,287" alt="computer" href="https://www.apple.com/mac/">
+    <area shape="circle" coords="525,412,156" alt="chair" href="https://www.ikea.com/us/en/cat/office-chairs-20654/">
+    <area shape="rect" coords="612,190, 663,286" alt="pencils" href="https://www.amazon.com/Best-Sellers-Office-Products-Pencil-Holders-Pen/zgbs/office-products/12901041">
+    <area shape="rect" coords="679,165,741,288" alt="flowers" href="https://www.amazon.com/slp/table-flower-decor/vjzzdkr5s9a7kz2">
+    <area shape="rect" coords="144,187,282,286" alt="books" href="https://www.amazon.com/slp/books-decor/xf29d8qpjet66wo">  
+</map>
 
 </body> <!-- label end -->
 </html>
@@ -83,5 +115,10 @@ What is "HTML"
 <cite> 	Defines the title of a work
 <q> 	Defines a short inline quotation
 
+    HTML links- The target attribute
+_blank opens the linked document in a new window or tab
+_self opens the linked document in the same window/tabb as it was clicked (this is default)
+_parent opens the linked document in the parent frame
+_top opens the linked document in a named frame
 -->
 <!-- Test Repository -->
